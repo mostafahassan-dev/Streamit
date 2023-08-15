@@ -2,7 +2,10 @@ footer{
     background-color: #191919;
     margin-top: 100px;
     padding: 50px 0;
+    overflow: hidden;
 }
+
+
 
 footer .container {
     display: grid;
@@ -33,10 +36,12 @@ footer i {
 
 footer .img {
     margin-top: 40px;
+    max-width: 310px;
 }
 
 footer span {
     font-size: 12px;
+    
 }
 
 @media only screen and (max-width: 768px) {
@@ -45,4 +50,14 @@ footer span {
       grid-template-columns: repeat(1, 1fr);
       grid-gap: 30px;
     }
+    footer p{
+        font-size: 14px;
+    }
+    ul{
+        flex-direction: column;
+        
+    }
+    footer ul li {
+       margin-top: 10px;         
+    }   
   }

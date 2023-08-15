@@ -7,14 +7,14 @@ import SinglePage from './components/watch/SinglePage';
 
 function App() {
   return (
-    <>
+    <div className='app'>
       <Header/>
       <Routes>
         <Route path='/' element={<HomePages/>}/>
         <Route path='/SinglePage/:id' element={<SinglePage/>}/>
       </Routes>
       <Footer/>
-    </>
+    </div>
   );
 }
 

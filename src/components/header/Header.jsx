@@ -9,9 +9,9 @@ function Header() {
     <header>
       <div className="container flexSB">
         <nav className='flexSB'>
-          <div className="logo">
-            <img src={logo}/>
-          </div>
+          <Link to='/' className="logo">
+            <img src={logo} alt='logo'/>
+          </Link>
           <ul className={Mobile ? "navMenu-list":"flexSB"} onClick={()=>setMobile(false)}>
             <Link to='/'>Home</Link>
             <Link to='/series'>Series</Link>
@@ -21,9 +21,9 @@ function Header() {
             <Link to='/contact'>Contact</Link>
           </ul>
           
-          <button className='toggle' onClick={()=>setMobile(!Mobile)}>
+          <div className='toggle' onClick={()=>setMobile(!Mobile)}>
           {Mobile ? <i className='fa fa-times'></i> : <i className='fa fa-bars'></i>}
-          </button>
+          </div>
           
         </nav>
         <div className='account flexSB'>

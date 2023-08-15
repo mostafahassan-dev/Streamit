@@ -4,8 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
+
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #141414;
@@ -25,7 +25,7 @@ ul{
 }
 
 .container{
-    max-width: 90%;
+    width: 90%;
     margin: auto;
 }
 button{
@@ -36,6 +36,7 @@ button{
     color: #fff;
     font-weight: 500px;
     font-size: 17px;
+    cursor: pointer;
 }
 .row {
     width: 50%;
@@ -51,21 +52,18 @@ p {
 .control-btn button{
     background: none;
     padding: 0;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border: 2px solid rgba(255, 255, 255, .3);
     border-radius: 50%;
     cursor: pointer;
-}
-.control-btn .next{
     position: absolute;
     top: 50%;
+}
+.control-btn .next{
     right: 2%;
 }
 .control-btn .prev{
-    position: absolute;
-    top: 50%;
     left: 2%;
     z-index: 99;
 }
-

@@ -7,12 +7,6 @@
     color: #fff;
     overflow: hidden;
 }
-
-.homeContainer {
-    position: relative;
-    
-} 
-
 .coverImage {
     position: absolute;
     top: 0;
@@ -87,6 +81,7 @@
     font-weight: 500;
     margin-bottom: 10px;
     font-size: 17px;
+    white-space: nowrap;
 }
 .cast h4 span {
     color: #e50813;
@@ -136,36 +131,34 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .homeContainer h1 {
-      font-size: 50px;
-      margin: 0;
-    }
     .home {
-      position: relative;
-      margin: 0;
-      height: 60vh !important;
+        position: relative;
+        height: 60vh !important;
+      }
+    .homeContainer .box h1 {
+      font-size: 50px;      
     }
+    
     .coverImage img {
       width: 100vw;
-      height: 70vh !important;
+      height: 60vh !important;
     }
-    .home .content {
+    .box .content {
       flex-direction: column;
       padding: 50px;
       
     }
-    .home .row {
+    .box .row {
       width: 100%;
     }
-    .home .play-btn {
+    .box .play-btn {
       display: none;
     }
 
-    .homeContainer .rating {
+    .box .rating {
         margin: 20px 0;
     }   
-
-    .homeContainer .cast {
+    .box .cast {
         margin: 20px 0;
         
     }
@@ -174,16 +167,14 @@
 
 
 @media only screen and (max-width: 550px) {
-    .home {
-        height: 50vh !important;
-      }
-    .homeContainer h1 {
+    .homeContainer .box h1 {
         font-size: 40px;
     }
-    .home .content{
-        padding: 40px 10px;
-        
-        
+    .coverImage img {
+        width: 100vw;
+    }
+    .homeContainer .content{
+        padding: 40px 10px;  
     }
     .details {
         padding: 0 30px;
@@ -191,29 +182,24 @@
     .details p{
         display: none;
     }
-
-
     .rate i {
         margin-right: 1px;
     
     }
-    
     .rating label {
         margin: 0 ;
         font-size: 14px;
     }
-
     .rating span {
 
         font-size: 12px;
         margin: 0 5px;
-
     }
 
     .cast h4 {
         font-size: 14px;
     }
-    .home .control-btn{
+    .homeContainer .control-btn{
         display: none;
     }
 }

@@ -5,7 +5,6 @@ import playButton from '../../assets/play-button.png'
 function HomeCard({item:{id, name, rating, time, desc, starring, genres, tags, cover,video, date}}) {
 
   return (
-    <>
       <div className="box">
         <div className="coverImage">
           <img src={cover} alt="cover" />
@@ -41,9 +40,12 @@ function HomeCard({item:{id, name, rating, time, desc, starring, genres, tags, c
                 {tags}
               </h4>
             </div>
-            <button className='primary-btn'>
-              <i className='fas fa-play'></i> PLAY NOW
-            </button>
+            <Link to={`singlepage/${id}`}>
+              <button className='primary-btn'>
+                <i className='fas fa-play'></i> PLAY NOW
+              </button>
+            </Link>
+            
           </div>
           <div className="play-btn row">
             <Link to={`singlepage/${id}`}>
@@ -58,7 +60,6 @@ function HomeCard({item:{id, name, rating, time, desc, starring, genres, tags, c
           </div>
         </div>
       </div>
-    </>
   )
 }
 

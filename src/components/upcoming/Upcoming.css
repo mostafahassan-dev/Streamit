@@ -14,8 +14,10 @@
     position: relative;
     transition: 0.5s;
     border-left: 5px solid transparent;
-    margin-left: 20px;
-    height: 220px;
+    margin-left: 10px;
+    height: 200px;
+    /* width: 368px; */
+    width: auto;
 }
 
 .movieBox:hover{
@@ -69,55 +71,42 @@
 
 
 
-/* @media only screen and (max-width: 768px) {
-    .movieBox {
-      width: 320px;
-      height: 250px;
+@media only screen and (max-width: 768px) {
+    .upcome{
+        margin: 20px 0; 
     }
-} */
+    .movieBox {
+      height: 180px;
+    }
+    .movieBox .text {
+        padding: 25px ;
+    }
+}
 
 @media only screen and (max-width: 550px) {
-    .upcome{
-        margin: 0;
-    }
-
+   
     .heading h1{
-        font-size: 20px;
+        font-size: 18px;
+        margin: 10px 0;
     }
-
     .heading a{
-        font-size: 14px;
+        font-size: 12px;
     }
-
     .movieBox {
-      max-width: 160px;
-      height: 110px;
-      margin: auto;
+      height: 105px;
       border: none;
-      
+    
     }
     .movieBox .text {
         font-size: 12px;
-        padding: 20px ;
     }
     .movieBox .text button{
         display: none;
     }
-    .control-btn .prev ,.control-btn .next{
-        width: 30px;
-        height: 30px;
-        /* border-radius: 50; */
-        border: 1px solid rgba(255, 255, 255, 0.3);
+    .control-btn button {    
         border: none;
-        background: rgba(255, 255, 255, 0.07);
         top: 35%;
-        
+    
     }
     
-    .control-btn .prev{
-        left: 4%;
-    }
-    .control-btn .next{
-        right: 4%;
-    }
 }

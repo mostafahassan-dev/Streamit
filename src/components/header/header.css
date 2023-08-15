@@ -40,13 +40,11 @@ header button{
     display: none;
     position: absolute;
     top: 0;
-    right: 20px;
-    margin: auto;
+    right: 0;
     cursor: pointer;
-    background: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     header nav .flexSB{
         display: none;
     }
