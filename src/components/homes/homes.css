@@ -125,23 +125,25 @@
     letter-spacing: 2px;
     transition: 0.5s;
 }
-.margin{
-   height: 100vh;
-    
+
+@media only screen and (max-width: 1024px) {    
+    .details {
+        flex: .75;
+    }
+    .box .play-btn {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 768px) {
     .home {
-        position: relative;
-        height: 60vh !important;
+        height: 75vh !important;
       }
     .homeContainer .box h1 {
       font-size: 50px;      
     }
-    
     .coverImage img {
-      width: 100vw;
-      height: 60vh !important;
+      height: 75vh !important;
     }
     .box .content {
       flex-direction: column;
@@ -167,11 +169,18 @@
 
 
 @media only screen and (max-width: 550px) {
+
+    .home {
+        position: relative;
+        height: 55vh !important;
+    }
     .homeContainer .box h1 {
         font-size: 40px;
     }
     .coverImage img {
         width: 100vw;
+        height: 56vh !important;
+
     }
     .homeContainer .content{
         padding: 40px 10px;  

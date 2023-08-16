@@ -1,5 +1,5 @@
 header{
-    height:10vh;
+    height: 10vh;
     background-image: linear-gradient(to right bottom ,rgba(0,0,0,0.9),rgba(0,0,0,0.7), rgba(0,0,0,0.5), rgba(0,0,0,0.3), rgba(0,0,0,0) );
     z-index: 999;
     color: #fff;
@@ -9,10 +9,10 @@ header{
     width: 100%;
     padding: 20px 0;
 }
-
 .logo img{
     width: 150px;
     margin-right: 60px;
+    margin-top: 5px;
 }
 header a{
     color: #fff;
@@ -44,6 +44,10 @@ header button{
 }
 
 @media screen and (max-width: 1024px) {
+    header{
+        height:85px;
+        position: absolute;
+    }
     header nav .flexSB{
         display: none;
     }
@@ -62,6 +66,7 @@ header button{
         background-color: #e50813;
         height: 100vh;
         width: 50%;
+        line-height: 10vh;
     }
 }
   
