@@ -11,14 +11,8 @@ export default function Homes() {
     <>
       
       <section className='home'>
-        
         <Home items={items}/>
-
       </section>
-
-      {/* <div className="margin">
-
-      </div> */}
     
     </>
   )
